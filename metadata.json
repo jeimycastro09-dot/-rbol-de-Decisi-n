@@ -1,0 +1,6 @@
+{
+  "name": "BancoLab · Árboles de decisión",
+  "description": "Aplicación educativa interactiva para comprender los árboles de decisión CART, el riesgo crediticio sintético, los umbrales de alerta y las políticas ilustrativas de tarjetas de crédito.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --bg-space: #050A18;
+    --bg-panel: #101A32;
+    --bg-panel-alt: #121F3A;
+    --ink-ice: #F0F7FF;
+    --ink-slate: #CBD5E1;
+    --ink-muted: #8FA3C7;
+    --accent-cyan: #25E5F2;
+    --accent-violet: #9C6BFF;
+    --accent-amber: #F59E0B;
+    --accent-rose: #FB7185;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #050A18;
+    color: #F0F7FF;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #050A18;
+    background-image:
+      radial-gradient(900px 520px at 15% -5%, rgba(14, 78, 108, 0.34), transparent 65%),
+      radial-gradient(760px 460px at 92% 6%, rgba(156, 107, 255, 0.18), transparent 60%),
+      radial-gradient(640px 420px at 55% 100%, rgba(37, 229, 242, 0.08), transparent 65%);
+    background-attachment: fixed;
+    color: #F0F7FF;
+  }
+
+  select,
+  input[type="text"],
+  input[type="number"] {
+    color-scheme: dark;
+  }
+
+  select option {
+    background-color: #0B1328;
+    color: #F0F7FF;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #25E5F2;
+    outline-offset: 2px;
+  }
+}
+
+.lab-grid-overlay {
+  background-image:
+    linear-gradient(to right, rgba(37, 229, 242, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 229, 242, 0.045) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.lab-panel {
+  background-color: rgba(16, 26, 50, 0.86);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(37, 229, 242, 0.18);
+  box-shadow: 0 12px 32px -12px rgba(2, 6, 23, 0.72);
+}
+
+.lab-panel-alt {
+  background-color: rgba(18, 31, 58, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(156, 107, 255, 0.24);
+  box-shadow: 0 12px 32px -12px rgba(2, 6, 23, 0.72);
+}
+
+.font-serif-formula {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+.font-mono-num {
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
